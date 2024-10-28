@@ -1,0 +1,7 @@
+GRANT ALL PRIVILEGES ON authors TO martin;
+REVOKE ALL PRIVILEGES ON authors FROM martin;
+GRANT SELECT ON authors TO PUBLIC;
+GRANT INSERT, SELECT ON Books TO martin WITH GRANT OPTION;
+GRANT UPDATE ON books_bookid_seq TO martin WITH GRANT OPTION;
+GRANT INSERT,SELECT ON Books TO docencia;
+GRANT UPDATE ON books_bookid_seq TO docencia;
